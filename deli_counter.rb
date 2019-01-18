@@ -1,21 +1,21 @@
 katz_deli = []
 
-def line(katz_deli)
-  string = "The line is currently: "
-  if katz_deli.length == 0 
-    puts "The line is currently empty."
+def line (katz_deli)
+  result = "The line is currently: "
+  if katz_deli.length < 1
+    result = 'The line is currently empty.'
   else
     katz_deli.each_with_index do |name, index|
-      if index == katz_deli.length
-        string += "#{index + 1}. #{name}"
+      if index == katz_deli.length - 1
+        result += "#{index + 1}. #{name}"
         else
-        string += "#{index + 1}. #{name}"
+        result += "#{index + 1}. #{name} "
       end
-      puts string
-      string 
     end
-  end 
-end 
+  end
+  puts result
+  result
+end
 
 def take_a_number(katz_deli, name)
   katz_deli << name 
