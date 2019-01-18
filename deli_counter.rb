@@ -1,17 +1,18 @@
 katz_deli = []
 
 def line(katz_deli)
+  string = "The line is currently: "
   if katz_deli.length == 0 
     puts "The line is currently empty."
   else
-    current_line = []
-    count = 0
-    katz_deli.each do |name|
-      count += 1 
-      current_line.push("#{count}. #{name} ")
-    end 
-    return "The line is currently: #{current_line.to_s}"
-  end 
+    katz_deli.each_with_index do |name, index|
+      if index == katz_deli.length -1 
+        string += "#{index + 1}. #{name}"
+      else
+        string += "#{index + 1}. #{name}"
+      end 
+    end
+  puts string 
 end 
 
 def take_a_number(katz_deli, name)
@@ -26,3 +27,4 @@ def now_serving(katz_deli)
     puts "Currently serving #{katz_deli.shift}."
   end 
 end 
+
