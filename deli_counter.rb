@@ -12,7 +12,6 @@ def line(katz_deli)
         string += "#{index + 1}. #{name}"
       end 
       puts string 
-      
     end
   end 
 end 
