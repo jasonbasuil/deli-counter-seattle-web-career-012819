@@ -6,7 +6,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     katz_deli.each_with_index do |name, index|
-      if index == 0
+      if index == katz_deli.length -1 
         string += "#{index + 1}. #{name}"
       else
         string += "#{index + 1}. #{name}"
