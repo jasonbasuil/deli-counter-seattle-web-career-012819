@@ -15,7 +15,6 @@ def line(katz_deli)
       string 
     end
   end 
-  
 end 
 
 def take_a_number(katz_deli, name)
