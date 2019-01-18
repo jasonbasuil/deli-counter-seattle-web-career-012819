@@ -11,9 +11,10 @@ def line(katz_deli)
       else
         string += "#{index + 1}. #{name}"
       end 
+      puts string 
     end
   end 
-  puts string 
+  
 end 
 
 def take_a_number(katz_deli, name)
