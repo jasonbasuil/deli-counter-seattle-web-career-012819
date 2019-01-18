@@ -8,7 +8,7 @@ def line(katz_deli)
     katz_deli.each_with_index do |name, index|
       if index == katz_deli.length -1 
         string += "#{index + 1}. #{name}"
-      else
+        else
         string += "#{index + 1}. #{name}"
       end 
       puts string 
